@@ -1,0 +1,9 @@
+#!groovy
+
+import groovy.json.JsonSlurperClassic
+
+node {
+    withEnv(["HOME=${env.WORKSPACE}"]) {
+        echo "I am Here!"
+    }
+}
